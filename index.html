@@ -6,10 +6,11 @@
         m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
         })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-        ga('create', 'UA-75475357-1', 'auto', {
-            userId: 'umwkim'
-        });
+        var dimensionValue = 'kmw';
+        ga('create', 'UA-75475357-1', {'userId': dimensionValue});
+        ga('set', 'dimension1', dimensionValue);
         ga('send', 'pageview');
+        
     </script>
 </head>
 <body>
