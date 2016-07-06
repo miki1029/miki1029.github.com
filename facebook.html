@@ -83,6 +83,10 @@
       document.getElementById('status').innerHTML =
         'Thanks for logging in, ' + response.name + '!';
     });
+    FB.api('/me/photos?fields=images&type=uploaded&limit=10', function(response) {
+      console.log('photos');
+      console.log(response);
+    });
   }
 </script>
 
